@@ -23,7 +23,15 @@ function preload() {
     game.load.image('ground', 'assets/platform.png');
     game.load.image('star', 'assets/star.png');
     // game.load.spritesheet('dude', 'assets/dude.png', 32, 48);
+<<<<<<< HEAD
     game.load.spritesheet('flynn', 'assets/Flynn_Sprite_Sheet_990x52.png', 90, 52);
+=======
+<<<<<<< HEAD
+    game.load.spritesheet('flynn', 'assets/FlynnSpriteSheet986x52.png', 90, 52);
+=======
+    game.load.spritesheet('flynn', 'assets/Flynn_Sprite_Sheet_900x52.png', 90, 52);
+>>>>>>> origin/master
+>>>>>>> FlynnTheFox.io/Kiana1
 
 }
 
@@ -66,7 +74,11 @@ function create() {
     ledge.body.immovable = true;
 
     // The player and its settings
+<<<<<<< HEAD
     player = game.add.sprite(90, game.world.height - 150, 'flynn');
+=======
+    player = game.add.sprite(32, game.world.height - 150, 'flynn');
+>>>>>>> origin/master
 
     //  We need to enable physics on the player
     game.physics.arcade.enable(player);
@@ -75,7 +87,11 @@ function create() {
     player.body.bounce.y = 0.2;
 
     //I CAN CHANGE THE GRAVITY PULL HERE.
+<<<<<<< HEAD
     player.body.gravity.y = 200;
+=======
+    player.body.gravity.y = 300;
+>>>>>>> origin/master
     player.body.collideWorldBounds = true;
 
     //  Our two animations, walking left and right.
