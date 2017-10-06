@@ -21,7 +21,7 @@ function preload() {
 
     game.load.image('sky', 'assets/sky.png');
     game.load.image('ground', 'assets/platform.png');
-    game.load.image('star', 'assets/star.png');
+    game.load.image('star', 'assets/Bunny45x45.png');
     // game.load.spritesheet('dude', 'assets/dude.png', 32, 48);
     game.load.spritesheet('flynn', 'assets/Flynn_Sprite_Sheet_990x52.png', 90, 52);
 
@@ -73,7 +73,7 @@ function create() {
     game.physics.arcade.enable(player);
 
     //  Player physics properties. Give the little guy a slight bounce.
-    player.body.bounce.y = 0.2;
+    player.body.bounce.y = .2;
 
     //I CAN CHANGE THE GRAVITY PULL HERE.
     player.body.gravity.y = 300;
